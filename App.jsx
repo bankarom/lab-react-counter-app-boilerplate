@@ -1,15 +1,39 @@
-import './App.css'
+import './App.css';
+import lake from "./image/lake.JPG";
+import GallaryFooter from './components/GallaryFooter';
+import Header from './components/header';
+import Footer from './components/footer';
 
+const imageData = [
+  {
+    id:1,
+    img:lake 
+  },
+  {
+    id:2,
+    img:lake
+  },
+  {
+    id:3,
+    img:lake
+  },
+  {
+    id:4,
+    img:lake
+  }
+]
 
-import Counter from './Components/Counter'
-
-function App(){
-
-return(
-  <>
-    <Counter/>
-  </>
-)
+function App() {
+  return (
+    <div>
+      
+      {/* adding footer component */}
+      
+      <Header/>
+      <Footer imgData = {imageData}/>
+      <GallaryFooter/>
+    </div>
+  )
 }
 
-export default App
+export default App;
